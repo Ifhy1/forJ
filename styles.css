@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f9e0e0, #0f0db4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #5c4d7d;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 90%;
+}
+
+#sorryLevel {
+  width: 300px;
+  margin: 2rem auto;
+  appearance: none;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+#sorryLevel::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#sorryMessage {
+  font-size: 1.4rem;
+  color: #884b8c;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.apology-note {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 80%;
+}
+
+.forgive-btn {
+  margin-top: 2rem;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #8a4fff;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.forgive-btn:hover {
+  transform: scale(1.05);
+}
+
+#gifContainer {
+  margin-top: 2rem;
+}
+
+#gifContainer img {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}

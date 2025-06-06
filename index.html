@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Sorry Meter 💔</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>I messed up... again 😞</h1>
+  <p>That’s strike three. I know. But hear me out...</p>
+
+  <label for="sorryLevel">How sorry should I be?</label>
+  <input type="range" id="sorryLevel" min="1" max="5">
+  <p id="sorryMessage">Move the slider to see how sorry I really am.</p>
+
+  <p class="apology-note">
+    But seriously, I’m truly sorry for balling on you again. Life got hectic, but you didn’t deserve that.  
+    Can I make it up to you? 🫶
+  </p>
+
+  <button class="forgive-btn" onclick="showForgiveness()">Forgive Me?</button>
+  <div id="gifContainer" class="hidden">
+    <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="Puppy apology gif" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
